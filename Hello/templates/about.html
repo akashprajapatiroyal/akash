@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock title %}
+
+{% block body %}
+<strong> List of all countries</strong>
+{% for i in response%}
+{{i.Country}}
+{% endfor %}
+{% endblock body %}
